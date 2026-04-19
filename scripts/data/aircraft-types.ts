@@ -694,6 +694,60 @@ export const AIRCRAFT_TYPES: AircraftTypeSeed[] = [
     engine_type: "jet",
   },
 
+  // ─── BAe 146 / Avro RJ family ─────────────────────────────────────────────
+  {
+    icao_code: "RJ85",
+    iata_code: "AR8",
+    name: "Avro RJ85",
+    manufacturer: "BAE Systems",
+    family: "Avro RJ",
+    model: "RJ85",
+    variant: null,
+    category: "regional",
+    engine_count: 4,
+    engine_type: "jet",
+  },
+  {
+    icao_code: "RJ1H",
+    iata_code: "AR1",
+    name: "Avro RJ100",
+    manufacturer: "BAE Systems",
+    family: "Avro RJ",
+    model: "RJ100",
+    variant: null,
+    category: "regional",
+    engine_count: 4,
+    engine_type: "jet",
+  },
+
+  // ─── De Havilland Twin Otter ──────────────────────────────────────────────
+  {
+    icao_code: "DHC6",
+    iata_code: "DHT",
+    name: "De Havilland DHC-6 Twin Otter",
+    manufacturer: "De Havilland",
+    family: "Twin Otter",
+    model: "DHC-6",
+    variant: null,
+    category: "turboprop",
+    engine_count: 2,
+    engine_type: "turboprop",
+  },
+
+  // ─── Generic helicopter (catch-all for helicopter flights) ────────────────
+  {
+    icao_code: "HELI",
+    iata_code: null,
+    name: "Helicopter (generic)",
+    manufacturer: "Various",
+    family: "Helicopter",
+    model: "Generic",
+    variant: null,
+    category: "regional",
+    engine_count: 1,
+    engine_type: "turboprop",
+  },
+
   // ─── Embraer E-Jet family ─────────────────────────────────────────────────
   {
     icao_code: "E170",

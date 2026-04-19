@@ -15,7 +15,8 @@
     "seed:airlines": "tsx scripts/seed-airlines.ts",
     "seed:aircraft": "tsx scripts/seed-aircraft-types.ts",
     "seed:all": "npm run seed:airports && npm run seed:airlines && npm run seed:aircraft",
-    "db:types": "supabase gen types typescript --linked --schema public > lib/supabase/database.types.ts"
+    "db:types": "supabase gen types typescript --linked --schema public > lib/supabase/database.types.ts",
+    "import:flighty": "tsx scripts/import-flighty.ts"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.3.1",
