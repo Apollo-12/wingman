@@ -7,9 +7,9 @@ import { Plane } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col">
-      <nav className="w-full border-b border-b-foreground/10 h-16">
-        <div className="max-w-5xl mx-auto flex justify-between items-center h-full px-5">
+    <main className="flex min-h-screen flex-col">
+      <nav className="h-16 w-full border-b border-b-foreground/10">
+        <div className="mx-auto flex h-full max-w-5xl items-center justify-between px-5">
           <Link href="/" className="flex items-center gap-2 font-semibold">
             <Plane className="h-5 w-5" />
             Wingman
@@ -23,13 +23,13 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="flex-1 flex flex-col items-center justify-center px-5 text-center">
-        <h1 className="text-5xl sm:text-6xl font-bold tracking-tight">
+      <section className="flex flex-1 flex-col items-center justify-center px-5 text-center">
+        <h1 className="text-5xl font-bold tracking-tight sm:text-6xl">
           Your flight log, reimagined.
         </h1>
         <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-          Track every flight, visualize your routes on a world map, and own
-          your travel data.
+          Track every flight, visualize your routes on a world map, and own your
+          travel data.
         </p>
         <div className="mt-10 flex gap-3">
           <Button asChild size="lg">

@@ -10,9 +10,9 @@ export default function ProtectedLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="min-h-screen flex flex-col">
-      <nav className="w-full border-b border-b-foreground/10 h-16">
-        <div className="max-w-5xl mx-auto flex justify-between items-center h-full px-5">
+    <main className="flex min-h-screen flex-col">
+      <nav className="h-16 w-full border-b border-b-foreground/10">
+        <div className="mx-auto flex h-full max-w-5xl items-center justify-between px-5">
           <Link href="/" className="flex items-center gap-2 font-semibold">
             <Plane className="h-5 w-5" />
             Wingman
@@ -26,7 +26,7 @@ export default function ProtectedLayout({
         </div>
       </nav>
 
-      <div className="flex-1 w-full max-w-5xl mx-auto px-5 py-8">
+      <div className="mx-auto w-full max-w-5xl flex-1 px-5 py-8">
         {children}
       </div>
 
